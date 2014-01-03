@@ -2,8 +2,10 @@
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>DeviantGallery</name>
     <author>eraden</author>
-    <version>1.0.0</version>
-    <description>A simple DeviantART gallery module.</description>
+    <version>v1.0</version>
+    <description>
+      A simple module to include DeviantART gallery to your Joomla 3.x page.
+    </description>
     <files>
         <filename>mod_deviantgallery.xml</filename>
         <filename module="mod_deviantgallery">mod_deviantgallery.php</filename>

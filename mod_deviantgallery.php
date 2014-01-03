@@ -4,7 +4,7 @@
  * 
  * @package    eraden.software
  * @subpackage Modules
- * @link http://eraden-software.com
+ * @link https://github.com/Nlete/mod_deviantGallery
  */
  
 // no direct access
