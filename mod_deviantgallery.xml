@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>DeviantGallery</name>
+    <author>eraden</author>
+    <version>1.0.0</version>
+    <description>A simple DeviantART gallery module.</description>
+    <files>
+        <filename>mod_deviantgallery.xml</filename>
+        <filename module="mod_deviantgallery">mod_deviantgallery.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/styles.css</filename>
+    </files>
+    <config>
+      <fields name="params">      
+      <fieldset name="basic">
+        <field type="spacer" name="mandatorySpacer" label="Mandatory parameters" description="The module needs these in order to work!" />
+        <field name="da_username" type="text" default="" label="Username" description="DeviantART username" />
+        <field name="da_gallery_number" type="text" default="" label="Gallery number" description="The number in the DA gallery URL" />
+        
+        <field type="spacer" name="optionalSpacer" label="Optional parameters" description="Optional settings!"/>
+        <field name="moduleclass_sfx" type="text" default="" label="Module class suffix" description="Module class suffix" />
+        <field name="limit" type="text" default="0" label="Limit" description="Number of item to be shown (default = 0)" />
+        <field name="start" type="text" default="0" label="Start" description="First item to be shown (default = 0)" />
+        
+        <field type="spacer" name="displaySpacer" label="Display parameters" description="Settings to customize your gallery!"/>
+        <field name="show_title" type="radio" label="Show title" description="Show the title of the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_image" type="radio" label="Show image" description="Show the image of the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_thumbnail" type="radio" label="Show thumbnail" description="Show the thumbnails for the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_info" type="radio" label="Show deviation info" description="Show 'Deviation info' as title" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_date" type="radio" label="Show date" description="Show the date of the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_desc" type="radio" label="Show desc" description="Show the description of the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_rating" type="radio" label="Show rating" description="Show the rating of the item" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_category" type="radio" label="Show category" description="Show the category of the item"  default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_artist" type="radio" label="Show artist" description="Show the artist of the item"  default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_avatar" type="radio" label="Show avatar" description="Show the avatar of the item's artist" default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_copyright" type="radio" label="Show copyright" description="Show the copyright of the item"  default="1" >
+          <option value="0">No</option> 
+          <option value="1">Yes</option>
+        </field>
+      </fieldset>
+     </fields>	
+    </config>
+</extension>
